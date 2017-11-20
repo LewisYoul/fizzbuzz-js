@@ -30,4 +30,18 @@ describe('JavaBuzz', function(){
     });
   });
 
+  describe('when playing Javabuzz', function(){
+    it('returns java when passed 3', function(){
+      expect(javabuzz.says(3)).toEqual('java');
+    });
+    it('returns buzz when passed 5', function(){
+      expect(javabuzz.says(5)).toEqual('buzz');
+    });
+    it('returns fizzbuzz when passed 15', function(){
+      expect(javabuzz.says(15)).toEqual('javabuzz');
+    });
+    it('returns 2 when passed 2', function(){
+      expect(javabuzz.says(2)).toEqual(2);
+    });
+  });
 });
